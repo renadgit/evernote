@@ -1,18 +1,29 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+
+  <div class='cont1'> 
+    <img alt="Vue logo" width= "150" src="../assets/logo.png">
+    <notes-list/>
+    <br/>
+    <v-btn fab dark color="cyan" to="/NoteView">
+    <v-icon dark>add</v-icon>
+    </v-btn>
   </div>
+
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import NotesList from '@/components/NotesList.vue'
 
 export default {
   name: 'home',
   components: {
-    HelloWorld
+    NotesList
   }
 }
 </script>
+<style scoped>
+.cont1{
+  width: 300 px;
+}
+</style>
